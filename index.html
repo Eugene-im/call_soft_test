@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://unpkg.com/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <form id="main_form" method="POST" action="javascript:void(null);" onsubmit="call()">
+            <div class="content">
+                <div class="sub_form_section">
+                    <div class="sub_form">
+                        <div class="input_row row">
+                            <div class="input-group col-sm-5 col-lg-5 col-xl-5">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div role="separator" class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            </div>
+                            <div class="input-group col-sm-5 col-lg-5 col-xl-5">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div role="separator" class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            </div>
+                        </div>
+                        <div class="sub_form_row">
+                            <div id="switch_2" class="bootstrap-switch-container">
+                                <input id="switch-state_2" type="checkbox" checked="checked" class="switch">
+                            </div>
+                            <div class="parcell_form hide">
+                                <div class="input_item parcell col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Weight">Weight:</label>
+                                    <div class="input-group">
+                                        <input id="Weight" name="Weight" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Kg</span>
+                                    </div>
+                                </div>
+                                <div class="input_item parcell col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Length">Length:</label>
+                                    <div class="input-group">
+                                        <input id="Length" name="Length" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Cm</span>
+                                    </div>
+                                </div>
+                                <div class="input_item parcell col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Width">Width:</label>
+                                    <div class="input-group">
+                                        <input id="Width" name="Width" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Cm</span>
+                                    </div>
+                                </div>
+                                <div class="input_item parcell col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Heigth">Heigth:</label>
+                                    <div class="input-group">
+                                        <input id="Heigth" name="Heigth" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Cm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pallet_form">
+                                <div class="input_item pallet col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Number-of-pallets">Number of pallets:</label>
+                                    <div class="input-group">
+                                        <input id="Number-of-pallets" name="Number-of-pallets" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Pcs</span>
+                                    </div>
+                                </div>
+                                <div class="input_item pallet col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Height">Height:</label>
+                                    <div class="input-group">
+                                        <input id="Heigth" name="Heigth" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Cm</span>
+                                    </div>
+                                </div>
+                                <div class="input_item pallet col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Weight-for-pallet">Weight for pallet:</label>
+                                    <div class="input-group">
+                                        <input id="Weight-for-pallet" name="Weight-for-pallet" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Kg</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub_form">
+                        <div class="sub_form_row">
+                            <div id="switch_2" class="bootstrap-switch-container">
+                                <input id="switch-state_2" type="checkbox" checked="checked" class="switch">
+                            </div>
+                            <div class="parcell_form hide">
+                                <div class="input_item parcell col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Weight">Weight:</label>
+                                    <div class="input-group">
+                                        <input id="Weight" name="Weight" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Kg</span>
+                                    </div>
+                                </div>
+                                <div class="input_item parcell col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Length">Length:</label>
+                                    <div class="input-group">
+                                        <input id="Length" name="Length" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Cm</span>
+                                    </div>
+                                </div>
+                                <div class="input_item parcell col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Width">Width:</label>
+                                    <div class="input-group">
+                                        <input id="Width" name="Width" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Cm</span>
+                                    </div>
+                                </div>
+                                <div class="input_item parcell col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Heigth">Heigth:</label>
+                                    <div class="input-group">
+                                        <input id="Heigth" name="Heigth" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Cm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pallet_form">
+                                <div class="input_item pallet col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Number-of-pallets">Number of pallets:</label>
+                                    <div class="input-group">
+                                        <input id="Number-of-pallets" name="Number-of-pallets" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Pcs</span>
+                                    </div>
+                                </div>
+                                <div class="input_item pallet col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Height">Height:</label>
+                                    <div class="input-group">
+                                        <input id="Heigth" name="Heigth" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Cm</span>
+                                    </div>
+                                </div>
+                                <div class="input_item pallet col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                    <label for="Weight-for-pallet">Weight for pallet:</label>
+                                    <div class="input-group">
+                                        <input id="Weight-for-pallet" name="Weight-for-pallet" value="" type="text" class="form-control">
+                                        <span class="input-group-addon">Kg</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button_row">
+                    <div class="button_plus_min">
+                        <button id="remove" type="button" class="btn btn-primary">- Remove</button>
+                        <button id="add" type="button" class="btn btn-primary">+ Add parcell pallet</button>
+                    </div>
+                    <button id="send" type="submit" class="btn btn-danger"> Quote & Book </button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://unpkg.com/bootstrap-switch"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+
+</html>

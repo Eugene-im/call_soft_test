@@ -1,0 +1,59 @@
+.content{
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #5349d2;
+}
+.sub_form{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px 7%;
+	margin: 15px;
+}
+.button_row, .input_row, .sub_form_row, .parcell_form, .pallet_form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+}
+	.button_row{
+	justify-content: space-between;
+	padding: 0 15px;
+	}
+.sub_form_row, .parcell_form, .pallet_form{
+	align-items: flex-end;
+}
+
+.input_item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.bootstrap-switch{
+	width: 91px !important;
+}
+
+.hide{
+	display: none;
+}
+
+@media (max-width:768px) {
+	.pallet_form,
+	.button_row,
+	.parcell_form{
+	flex-direction: column;
+	}
+	.sub_form_row{
+		align-items: start;
+	}
+[id*="switch_"]{
+		margin-top: 32px;
+}
+.button_row{
+	align-items: start;
+}
+}
